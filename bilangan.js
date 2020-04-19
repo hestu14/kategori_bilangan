@@ -40,19 +40,24 @@ var prima ;
         jenis.push("cacah"); 
         }
 
-    if (x % 1 == 0) {
-    
-    jenis.push("bulat");
-    }
-    else {
-    jenis.push("pecahan"); 
-    }
-
     if (x !== 0) {
         jenis.push("asli");
     }
 
+    if (x % 1 == 0) {
+    
+        jenis.push("bulat");
+        }
+        else {
+        jenis = []; 
+        }
+        
     return jenis;
 }
 
-console.log(bilangan(11));
+console.log(bilangan(13));
+console.log(bilangan(0));
+console.log(bilangan(25));
+console.log(bilangan(73));
+console.log(bilangan(-34));
+console.log(bilangan(1.54));
